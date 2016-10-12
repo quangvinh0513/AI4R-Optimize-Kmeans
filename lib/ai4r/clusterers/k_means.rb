@@ -21,7 +21,7 @@ module Ai4r
     # http://en.wikipedia.org/wiki/K-means_algorithm   
     class KMeans < Clusterer
       
-      attr_reader :data_set, :number_of_clusters
+      attr_reader :data_set, :number_of_clusters, :cluster_indices
       attr_reader :clusters, :centroids, :iterations
       
       parameters_info :max_iterations => "Maximum number of iterations to " + 
